@@ -31,26 +31,9 @@ body {
     position: relative;
 }
 
-.cabecalho-outras{
-    width: 100%;
-    height: 150px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 0 5%;
-
-    background-color: #08090D;
-    border-bottom: 1px solid #25252B;
-
-    position: relative;
-
-}
 
 
-
-/* LOGO */
+/* CONFIGURAÇÕES LOGO*/
 
 .logo {
     display: flex;
@@ -79,8 +62,6 @@ body {
     clip-path: polygon(50% 0, 100% 16%, 94% 72%, 50% 100%, 6% 72%, 0 16%);
 }
 
-
-
 .nome-logo {
     font-size: 24px;
     font-weight: bold;
@@ -91,7 +72,7 @@ body {
 }
 
 
-/* MENU */
+/* MENU CABEÇALHO INDEX*/
 
 .menu {
     display: flex;
@@ -125,14 +106,13 @@ body {
     color: rgb(253, 23, 23);
 }
 
-
-
-
+/* BARRA EMBAIXO DO LINK INDEX*/
 .menu .ativo {
     color: white;
     border-bottom: 2px solid #E32636;
 }
 
+/* SEÇÃO INICIAL INDEX*/
 .secao-inicial {
     width: 100%;
     min-height: 30vh;
@@ -185,10 +165,16 @@ body {
     
 }
 
+/* SEÇÃO GOLPES INDEX */
 .secao-golpes {
     width: 100%;
     padding: 5%;
     box-sizing: border-box;
+}
+
+.simbolo {
+    color: #E32636;
+    font-size: 70px;
 }
 
 .cabecalho-golpes {
@@ -221,18 +207,6 @@ body {
     gap: 50px;
 }
 
-.cards-container-clicado{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    transform: translateX(9%);
-}
-
-.cards-container-clicado .ativo{
-    border-bottom: 5px solid #E32636;
-}
-
-
 .card-golpe {
     color: #ededf3;
     text-decoration: none;
@@ -261,9 +235,32 @@ body {
     font-weight: bold;
 }
 
-.simbolo {
-    color: #E32636;
-    font-size: 70px;
+/* CABEÇALHO DE OUTRAS PÁGINAS */
+.cabecalho-outras{
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    padding: 0 5%;
+
+    background-color: #08090D;
+    border-bottom: 1px solid #25252B;
+
+}
+/* CABEÇALHO COM CARDS DAS OUTRAS PÁGINAS */
+.cards-container-clicado{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+.cards-container-clicado .ativo{
+    border-bottom: 5px solid #E32636;
 }
 
 .quadrado-clicado{
@@ -299,7 +296,182 @@ body {
 }
 
 
+/* PÁGINA SOBRE */
+#titulo-sobre{
+    max-width: 100%;
+    white-space: nowrap;
+}
 
+.conteudo-texto-sobre{
+    max-width: 600px;
+
+}
+.conteudo-texto-sobre h1 {
+    font-size: 72px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.texto-sobre {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0 0 22px 0;
+  color: #dcdcdc;
+}
+
+.texto-sobre strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Frase de encerramento */
+.frase-final {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+
+/* Cor vermelha para o ponto de exclamação e a palavra "Desconfie" */
+.vermelho {
+  color: #e62e3d;
+}
+
+.conteudo-imagem-sobre img{
+    max-width: 100%;
+    width: 300px; 
+    position: absolute;
+    right: 5%;
+    top: 40px;
+    
+}
+/* FIM PÁGINA SOBRE */
+
+/* PÁGINA CONTATO */
+.conteudo-imagem-contato img{
+    max-width: 100%;
+    width: 500px; 
+    position: absolute;
+    right: 5%;
+    top: 40px;
+    
+}
+
+
+.cards-container-contato{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 40px;
+    
+}
+
+.card-contato {
+    color: #ededf3;
+    text-decoration: none;
+    
+    font-size: 13px;
+}
+
+.quadrado-contato{
+    width: 200px;
+    height: 150px;
+    background-color: #2c2c2c;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1px;  
+    transition: 0.3s;
+}
+
+
+.simbolo-contato {
+    color: #f8f6f6;
+    font-size: 70px;
+}
+
+/* PÁGINAS GOLPES */
+
+.conteudo-imagem-pix img{
+    max-width: 100%;
+    width: 400px; 
+    position: absolute;
+    right: 6%;
+    top: 15px;
+    
+}
+
+.cabecalho-golpes-explicando {
+    margin-bottom: 30px;
+}
+
+.detalhe-linha {
+    width: 40px;
+    height: 3px;
+    background-color: #E32636;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.cabecalho-golpes-explicando h2 {
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.cards-container-explicando{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.card-golpe-explicando{
+    color: #ededf3;
+    text-decoration: none;
+    
+    font-size: 13px;
+}
+
+.quadrado-explicando {
+    width: 1000px;
+    height: 75px;
+    background-color: #2c2c2c;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5px;  
+    
+}
+
+.quadrado-explicando p{
+    font-weight: bold;
+}
+
+.cards-container-explicando .quadrado-diferente{
+    width: 650px;
+    height: 325px;
+    background-color: #2c2c2c;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 1100px;
+    padding-top: 5px;  
+    
+
+}
+
+/* CONFIGURAÇÕES RODAPÉ DE TODAS AS PÁGINAS */
 .rodape {
     width: 100%;
     height: 75px;
@@ -311,9 +483,6 @@ body {
     position: absolute;
     bottom: 0%;
     border-top: 1px solid #25252B;
-
-    
-    
 }
 
 .menu-rodape {
