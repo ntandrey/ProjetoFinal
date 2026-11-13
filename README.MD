@@ -25,7 +25,7 @@ O **Desconfia!** possui informações sobre diferentes tipos de golpes que estã
 ## Estrutura de pastas
 
 ```
-projeto/
+PROJETOFINALWEB/
 ├── css/
 │   └── style.css
 ├── html/
