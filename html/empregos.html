@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desconfia!</title>
+    <title>Falsas ofertas de emprego</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
     <header class="cabecalho-outras">
-
 
         <!-- Cards que levam a outras páginas quando um já foi clicado-->
         <nav class="cards-container-clicado">
@@ -20,7 +19,7 @@
             <a href="index.html" class="card-golpe">
                 <div class="quadrado-clicado">
                     <span class="icone-logo">!</span>
-                    <p id="ajuste">Início</p>
+                    <p class="ajuste">Início</p>
                 </div>
             </a>
 
@@ -64,14 +63,128 @@
                 </div>
             </a>
 
-
         </nav>
-
-        
 
     </header>
 
     <main>
+
+        <!-- Seção da parte inicial -->
+        <section class="secao-inicial">
+            <div class="conteudo-texto-sobre">
+                <div id="titulo-sobre">
+                    <h1>Falsas ofertas <br>de <span class="vermelho">emprego!</span></h1>
+                </div>
+                <div class="detalhe-linha"></div>
+
+                <p class="texto-sobre">
+                    Golpistas aproveitam a busca por trabalho para oferecer empregos falsos, pedir dinheiro ou obter
+                    seus dados pessoais. Aprenda a identificar essas fraudes e não caia nesse golpe!
+                </p>
+
+                <div class="conteudo-imagem-emprego">
+                    <img src="../img/imgemprego.jpg" alt="emprego">
+                </div>
+
+                <section class="secao-golpes-explicando">
+                    <div class="cabecalho-golpes-explicando">
+                        <div class="detalhe-linha"></div>
+                        <h2>Exemplos comuns</h2>
+                    </div>
+
+                    <!-- Início dos cards-->
+                    <!-- Classe que agrupa a coluna da esquerda e direita -->
+                    <div class="cards-container-2col">
+                        <div class="coluna-esquerda">
+                            <!-- Card 1 -->
+                            <div class="quadrado-comprido">
+                                <!-- Emoji -->
+                                <span class="simbolo">💰</span>
+
+                                <!-- Bloco que agrupa título e descrição de cada card -->
+                                <div class="titulo-descricao">
+                                    <h3 class="titulo">
+                                        Promessas de altos salários
+                                    </h3>
+
+                                    <p class="descricao">
+                                        Ofertas de ganhos muito acima da média para trabalhos simples.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="quadrado-comprido">
+                                <span class="simbolo">💻</span>
+
+                                <!-- Bloco que agrupa título e descrição de cada card -->
+                                <div class="titulo-descricao">
+                                    <h3 class="titulo">
+                                        Pedidos de pagamento antecipado
+                                    </h3>
+
+                                    <p class="descricao">
+                                        Solicitam um valor para liberar o suposto emprego.
+                                    </p>
+
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="quadrado-comprido">
+                                <span class="simbolo">📄</span>
+
+                                <!-- Bloco que agrupa título e descrição de cada card -->
+                                <div class="titulo-descricao">
+                                    <h3 class="titulo">
+                                        Cadastro falso
+                                    </h3>
+
+                                    <p class="descricao">
+                                        Pedem seus dados pessoais para "cadastrar" em uma vaga.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="coluna-direita">
+                            <!-- Card 4 -->
+                            <div class="emprego">
+                                <div class="quadrado-grande">
+
+                                    <div class="titulo-icone-qd">
+                                        <span class="icone-logo">!</span>
+                                        <h3 class="titulo-qd">
+                                            Dicas de proteção
+                                        </h3>
+                                    </div>
+
+                                    <ul class="descricao-qd">
+                                        <li><span class="check">✓</span>Desconfie de ofertas que prometem salários
+                                            irreais.
+                                        </li>
+                                        <li><span class="check">✓</span>Nunca pague para conseguir um emprego.</li>
+                                        <li><span class="check">✓</span>Não forneça seus dados pessoais sem ter certeza
+                                            da
+                                            procedência da empresa.</li>
+                                        <li><span class="check">✓</span>Pesquise sobre a empresa e verifique se a vaga
+                                            realmente existe.</li>
+                                        <li><span class="check">✓</span>Em caso de dúvida, busque informações em sites
+                                            oficiais.</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
+        </section>
 
     </main>
 
@@ -81,7 +194,6 @@
             <!-- Símbolo do escudo com exclamação -->
             <span class="icone-logo">!</span>
 
-            <!-- Texto depois do escudo -->
             <span class="nome-logo">
                 Desconfia <span class="vermelho">!</span>
             </span>

@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desconfia!</title>
+    <title>Links suspeitos</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
     <header class="cabecalho-outras">
-
 
         <!-- Cards que levam a outras páginas quando um já foi clicado-->
         <nav class="cards-container-clicado">
@@ -20,7 +19,7 @@
             <a href="index.html" class="card-golpe">
                 <div class="quadrado-clicado">
                     <span class="icone-logo">!</span>
-                    <p id="ajuste">Início</p>
+                    <p class="ajuste">Início</p>
                 </div>
             </a>
 
@@ -64,14 +63,124 @@
                 </div>
             </a>
 
-
         </nav>
-
-        
 
     </header>
 
     <main>
+
+        <!-- Seção da parte inicial -->
+        <section class="secao-inicial">
+            <div class="conteudo-texto-sobre">
+                <div id="titulo-sobre">
+                    <h1>Links <span class="vermelho">suspeitos</span></h1>
+                </div>
+                <div class="detalhe-linha"></div>
+
+                <p class="texto-sobre">
+                    Links suspeitos podem parecer inofensivos, mas podem roubar seus dados, instalar vírus ou aplicar
+                    golpes. Desconfie de links recebidos por mensagens, e-mails ou redes sociais.
+                </p>
+
+                <div class="conteudo-imagem-link">
+                    <img src="../img/imglink.jpg" alt="link">
+                </div>
+
+                <section class="secao-golpes-explicando">
+                    <div class="cabecalho-golpes-explicando">
+                        <div class="detalhe-linha"></div>
+                        <h2>Exemplos comuns</h2>
+                    </div>
+
+                    <!-- Início dos cards-->
+                    <!-- Classe que agrupa a coluna da esquerda e direita -->
+                    <div class="cards-container-2col">
+                        <div class="coluna-esquerda">
+                            <!-- Card 1 -->
+                            <div class="quadrado-comprido">
+                                <!-- Emoji -->
+                                <span class="simbolo">✉</span>
+
+                                <!-- Bloco que agrupa título e descrição de cada card -->
+                                <div class="titulo-descricao">
+                                    <h3 class="titulo">
+                                        Links em mensagens
+                                    </h3>
+
+                                    <p class="descricao">
+                                        Links enviados por desconhecidos ou até mesmo por amigos, com promessas de
+                                        prêmios, promoções ou curiosidades.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="quadrado-comprido">
+                                <span class="simbolo">🎁</span>
+
+                                <!-- Bloco que agrupa título e descrição de cada card -->
+                                <div class="titulo-descricao">
+                                    <h3 class="titulo">
+                                        Promoções falsas
+                                    </h3>
+
+                                    <p class="descricao">
+                                        Links que oferecem prêmios incríveis, mas pedem seus dados.
+                                    </p>
+
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="quadrado-comprido">
+                                <span class="simbolo">⚠️</span>
+
+                                <!-- Bloco que agrupa título e descrição de cada card -->
+                                <div class="titulo-descricao">
+                                    <h3 class="titulo">
+                                        Links encurtados
+                                    </h3>
+
+                                    <p class="descricao">
+                                        Links encurtados podem esconder destinos perigosos.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="coluna-direita">
+
+                            <!-- Card 4 -->
+                            <div class="quadrado-grande">
+
+                                <div class="titulo-icone-qd">
+                                    <span class="icone-logo">!</span>
+                                    <h3 class="titulo-qd">
+                                        Dicas de proteção
+                                    </h3>
+                                </div>
+
+                                <ul class="descricao-qd">
+                                    <li><span class="check">✓</span>Não clique em links de fontes desconhecidas.</li>
+                                    <li><span class="check">✓</span>Desconfie de promoções boas demais para serem
+                                        verdade.</li>
+                                    <li><span class="check">✓</span>Confira o endereço do link antes de clicar.</li>
+                                    <li><span class="check">✓</span>Em caso de dúvida, acesse o site oficial da empresa
+                                        pelo seu navegador.</li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
+        </section>
 
     </main>
 
@@ -81,7 +190,7 @@
             <!-- Símbolo do escudo com exclamação -->
             <span class="icone-logo">!</span>
 
-            <!-- Texto depois do escudo -->
+    
             <span class="nome-logo">
                 Desconfia <span class="vermelho">!</span>
             </span>

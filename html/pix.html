@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desconfia!</title>
+    <title>Golpes do Pix</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -20,7 +20,7 @@
             <a href="index.html" class="card-golpe">
                 <div class="quadrado-clicado">
                     <span class="icone-logo">!</span>
-                    <p id="ajuste">Início</p>
+                    <p class="ajuste">Início</p>
                 </div>
             </a>
 
@@ -87,8 +87,9 @@
                 </p>
 
                 <div class="conteudo-imagem-pix">
-                    <img src="../img/PIX.jpg" alt="pix">
+                    <img src="../img/pix.jpg" alt="pix">
                 </div>
+
 
                 <section class="secao-golpes-explicando">
                     <div class="cabecalho-golpes-explicando">
@@ -96,38 +97,122 @@
                         <h2>Principais golpes</h2>
                     </div>
 
-                    <div class="cards-container-explicando">
-                        <!-- Card 1 -->
-                        <div class="quadrado-explicando">
+                    <!-- Início dos cards-->
+                    <!-- Classe que agrupa a coluna da esquerda e direita -->
+                    <div class="cards-container-2col">
+                        <div class="coluna-esquerda">
+                            <!-- Card 1 -->
+                            <div class="quadrado-comprido">
+                                <!-- Emoji -->
+                                <span class="simbolo">💬</span>
 
+                                <!-- Bloco que agrupa título e descrição de cada card -->
+                                <div class="titulo-descricao">
+                                    <h3 class="titulo">
+                                        Falso suporte do banco
+                                    </h3>
+
+                                    <p class="descricao">
+                                        Golpistas se passam pelo banco e pedem seus dados ou um Pix de "verificação".
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Card 2 -->
+                            <div class="quadrado-comprido">
+                                <!-- Construção do simbolo qrcode -->
+                                <div class="simbolo-qrcode">
+                                    <!-- Bloquinho 1 qrcode -->
+                                    <div class="blocosqrcode1"></div>
+                                    <!-- Bloquinho 2 qrcode -->
+                                    <div class="blocosqrcode2"></div>
+                                    <!-- Bloquinho 3 qrcode -->
+                                    <div class="blocosqrcode3"></div>
+                                </div>
+
+                                <!-- Bloco que agrupa título e descrição de cada card -->
+                                <div class="titulo-descricao">
+                                    <h3 class="titulo">
+                                        QR Code falso
+                                    </h3>
+
+                                    <p class="descricao">
+                                        Você escaneia um QR Code fraudulento e acaba enviando dinheiro para o golpista.
+                                    </p>
+
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="quadrado-comprido">
+                                <span class="simbolo">👤</span>
+
+                                <!-- Bloco que agrupa título e descrição de cada card -->
+                                <div class="titulo-descricao">
+                                    <h3 class="titulo">
+                                        Se passando por conhecido
+                                    </h3>
+
+                                    <p class="descricao">
+                                        Criminosos clonam perfis e pedem um Pix se passando por amigos ou familiares.
+                                    </p>
+
+                                </div>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="quadrado-comprido">
+                                <!-- Emoji -->
+                                <span class="simbolo">📞</span>
+
+                                <!-- Bloco que agrupa título e descrição de cada card -->
+                                <div class="titulo-descricao">
+                                    <h3 class="titulo">
+                                        Golpe da ligação
+                                    </h3>
+
+                                    <p class="descricao">
+                                        Você recebe uma ligação se passando por banco ou empresa e é induzido a fazer um
+                                        Pix.
+                                    </p>
+
+                                </div>
+
+                            </div>
                         </div>
 
-                        <!-- Card 2 -->
-                        <div class="quadrado-explicando">
+                        <div class="coluna-direita">
 
-                        </div>
-
-                        <!-- Card 3 -->
-                        <div class="quadrado-explicando">
-
-                        </div>
-
-                        <!-- Card 4 -->
-                        <div class="quadrado-explicando">
-
-                        </div>
-
-                        <div class="quadrado-diferente">
                             <!-- Card 5 -->
-                            <div class="quadrado-explicando">
-                                
+                            <div class="pix">
+                                <div class="quadrado-grande">
+
+                                    <div class="titulo-icone-qd">
+                                        <span class="icone-logo">!</span>
+                                        <h3 class="titulo-qd">
+                                            Dicas de proteção
+                                        </h3>
+                                    </div>
+
+                                    <ul class="descricao-qd">
+                                        <li><span class="check">✓</span>Desconfie de pedidos inesperados de Pix. </li>
+                                        <li><span class="check">✓</span>Nunca compartilhe seus dados pessoais.</li>
+                                        <li><span class="check">✓</span>Confira sempre as informações antes de
+                                            transferir dinheiro. </li>
+                                        <li><span class="check">✓</span>Em caso de suspeita, denuncie.</li>
+                                    </ul>
+
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
+
                 </section>
-                
-        
+            </div>
+
         </section>
 
     </main>

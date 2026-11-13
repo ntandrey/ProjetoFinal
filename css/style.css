@@ -9,7 +9,14 @@
 body {
     background-color: #08090D;
     font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
+main {
+    background-color: #030303;
+    flex: 1;
 }
 
 
@@ -39,7 +46,7 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    
+
     text-decoration: none;
     color: white;
 }
@@ -47,28 +54,24 @@ body {
 .icone-logo {
     width: 34px;
     height: 40px;
-    
+
     background-color: #E32636;
     color: white;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
+
+
     font-size: 25px;
     font-weight: bold;
-    
+
     clip-path: polygon(50% 0, 100% 16%, 94% 72%, 50% 100%, 6% 72%, 0 16%);
 }
 
 .nome-logo {
     font-size: 24px;
     font-weight: bold;
-}
-
-.vermelho {
-    color: #E32636;
 }
 
 
@@ -88,18 +91,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+
+
     height: 100%;
-    
+
     color: #BDBDC8;
     text-decoration: none;
-    
+
     font-size: 15px;
-    
+
     border-bottom: 2px solid transparent;
     transition: 0.3s;
-    
+
 }
 
 .menu a:hover {
@@ -120,14 +123,16 @@ body {
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: 50px;
     padding: 0 5%;
     padding-top: 10px;
-    padding-bottom: 5px;
-    border-bottom: solid #b9b6b6;
     border-top: solid #b9b6b6;
     box-sizing: border-box;
     gap: 40px;
+}
+
+.secaoindex .secao-inicial {
+    margin-top: 50px;
+    border-bottom: solid #b9b6b6;
 }
 
 .conteudo-texto {
@@ -156,19 +161,20 @@ body {
     margin-bottom: 40px;
 }
 
-.conteudo-imagem img{
+.conteudo-imagem img {
     max-width: 100%;
-    width: 600px; 
+    width: 600px;
     position: absolute;
     right: 5%;
     top: -55px;
-    
+
 }
 
 /* SEÇÃO GOLPES INDEX */
 .secao-golpes {
     width: 100%;
-    padding: 5%;
+    padding: 4%;
+    
     box-sizing: border-box;
 }
 
@@ -210,7 +216,7 @@ body {
 .card-golpe {
     color: #ededf3;
     text-decoration: none;
-    
+
     font-size: 13px;
 }
 
@@ -223,20 +229,20 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 5px;  
+    padding-top: 5px;
     transition: 0.3s;
 }
 
-.quadrado:hover{
+.quadrado:hover {
     color: rgb(229, 133, 133);
 }
 
-.quadrado p{
+.quadrado p {
     font-weight: bold;
 }
 
 /* CABEÇALHO DE OUTRAS PÁGINAS */
-.cabecalho-outras{
+.cabecalho-outras {
     width: 100%;
     height: 150px;
 
@@ -251,19 +257,20 @@ body {
     border-bottom: 1px solid #25252B;
 
 }
+
 /* CABEÇALHO COM CARDS DAS OUTRAS PÁGINAS */
-.cards-container-clicado{
+.cards-container-clicado {
     display: flex;
     justify-content: center;
     gap: 50px;
-    
+
 }
 
-.cards-container-clicado .ativo{
+.cards-container-clicado .ativo {
     border-bottom: 5px solid #E32636;
 }
 
-.quadrado-clicado{
+.quadrado-clicado {
     width: 200px;
     height: 100px;
     background-color: #2c2c2c;
@@ -272,40 +279,40 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 1px;  
+    padding-top: 1px;
     transition: 0.3s;
 }
 
-.quadrado-clicado:hover{
+.quadrado-clicado:hover {
     color: rgb(229, 133, 133);
 }
 
-.quadrado-clicado p{
+.quadrado-clicado p {
     font-weight: bold;
     font-size: 13px;
     line-height: 20px;
 }
 
-.quadrado-clicado .simbolo{
+.quadrado-clicado .simbolo {
     font-size: 35px;
-    line-height: px;
 }
 
-#ajuste{
+.ajuste {
     padding-top: 10px;
 }
 
 
 /* PÁGINA SOBRE */
-#titulo-sobre{
+#titulo-sobre {
     max-width: 100%;
     white-space: nowrap;
 }
 
-.conteudo-texto-sobre{
+.conteudo-texto-sobre {
     max-width: 600px;
 
 }
+
 .conteudo-texto-sobre h1 {
     font-size: 72px;
     color: #ffffff;
@@ -314,68 +321,69 @@ body {
 }
 
 .texto-sobre {
-  font-size: 1.25rem;
-  line-height: 1.5;
-  margin: 0 0 22px 0;
-  color: #dcdcdc;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin: 0 0 22px 0;
+    color: #dcdcdc;
 }
 
 .texto-sobre strong {
-  color: #ffffff;
-  font-weight: 700;
+    color: #ffffff;
+    font-weight: 700;
 }
 
 /* Frase de encerramento */
 .frase-final {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-top: 30px;
-  padding-bottom: 50px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 30px;
+    padding-bottom: 50px;
 }
 
-/* Cor vermelha para o ponto de exclamação e a palavra "Desconfie" */
+/* Cor vermelha para o ponto de exclamação */
 .vermelho {
-  color: #e62e3d;
+    color: #e62e3d;
 }
 
-.conteudo-imagem-sobre img{
+.conteudo-imagem-sobre img {
     max-width: 100%;
-    width: 300px; 
+    width: 300px;
     position: absolute;
     right: 5%;
     top: 40px;
-    
+
 }
+
 /* FIM PÁGINA SOBRE */
 
 /* PÁGINA CONTATO */
-.conteudo-imagem-contato img{
+.conteudo-imagem-contato img {
     max-width: 100%;
-    width: 500px; 
+    width: 500px;
     position: absolute;
     right: 5%;
     top: 40px;
-    
+
 }
 
 
-.cards-container-contato{
+.cards-container-contato {
     display: flex;
     justify-content: center;
     gap: 50px;
     padding-bottom: 40px;
-    
+
 }
 
 .card-contato {
     color: #ededf3;
     text-decoration: none;
-    
+
     font-size: 13px;
 }
 
-.quadrado-contato{
+.quadrado-contato {
     width: 200px;
     height: 150px;
     background-color: #2c2c2c;
@@ -384,8 +392,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 1px;  
+    padding-top: 1px;
     transition: 0.3s;
+}
+
+.quadrado-contato:hover {
+    color: rgb(253, 23, 23);
 }
 
 
@@ -396,13 +408,13 @@ body {
 
 /* PÁGINAS GOLPES */
 
-.conteudo-imagem-pix img{
+.conteudo-imagem-pix img {
     max-width: 100%;
-    width: 400px; 
+    width: 400px;
     position: absolute;
     right: 6%;
     top: 15px;
-    
+
 }
 
 .cabecalho-golpes-explicando {
@@ -424,50 +436,218 @@ body {
     margin-bottom: 5px;
 }
 
-.cards-container-explicando{
+
+.conteudo-imagem-banco img {
+    max-width: 100%;
+    width: 400px;
+    position: absolute;
+    right: 8%;
+    top: 55px;
+}
+
+.conteudo-imagem-link img {
+    max-width: 100%;
+    width: 400px;
+    position: absolute;
+    right: 11%;
+    top: 30px;
+
+}
+
+.conteudo-imagem-loja img {
+    max-width: 100%;
+    width: 400px;
+    position: absolute;
+    right: 11%;
+    top: 50px;
+
+}
+
+.conteudo-imagem-emprego img {
+    max-width: 100%;
+    width: 450px;
+    position: absolute;
+    right: 8%;
+    top: 45px;
+
+}
+
+.cards-container-2col {
     display: flex;
-    flex-direction: column;
-    align-items: left;
-    gap: 10px;
-    padding-bottom: 30px;
+    gap: 100px;
+    padding-bottom: 10px;
     position: relative;
 }
 
-.card-golpe-explicando{
-    color: #ededf3;
-    text-decoration: none;
-    
-    font-size: 13px;
+.coluna-esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
 }
 
-.quadrado-explicando {
+.quadrado-comprido {
     width: 1000px;
     height: 75px;
     background-color: #2c2c2c;
     border-radius: 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 5px;  
-    
+    gap: 30px;
+
 }
 
-.quadrado-explicando p{
-    font-weight: bold;
+.coluna-direita {
+    display: flex;
+    justify-content: flex-start;
+
 }
 
-.cards-container-explicando .quadrado-diferente{
-    width: 650px;
-    height: 325px;
+.cards-container-2col .quadrado-grande {
+    width: 550px;
+    height: 300px;
     background-color: #2c2c2c;
     border-radius: 20px;
     display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    transform: translateY(-27px);
+
+    left: 20px;
+    gap: 30px;
+
+}
+
+.pix .quadrado-grande {
+    transform: translateY(15px);
+}
+
+.loja .quadrado-grande {
+    height: 310px;
+
+}
+
+.emprego .quadrado-grande{
+    height: 340px;
+    width: 580px;
+    transform: translateY(-40px);
+
+}
+
+.quadrado-grande .icone-logo {
+    margin-left: 40px;
+    margin-top: 25px;
+    width: 50px;
+    height: 57px;
+
+
+}
+
+.quadrado-comprido .simbolo {
+    width: 48px;
+
+    height: 48px;
+
+    display: flex;
     align-items: center;
-    position: absolute;
-    left: 1100px;
-    padding-top: 5px;  
-    
+
+    justify-content: center;
+
+    margin-left: 19px;
+    flex-shrink: 0;
+
+    font-size: 36px;
+}
+
+.quadrado-comprido .simbolo-qrcode {
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff;
+    margin-left: 25px;
+}
+
+.blocosqrcode1 {
+    width: 13px;
+    height: 13px;
+    background-color: #070707;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.blocosqrcode2 {
+    width: 13px;
+    height: 13px;
+    background-color: #070707;
+    margin-left: 30px;
+    position: relative;
+    bottom: 13px;
+}
+
+.blocosqrcode3 {
+    width: 13px;
+    height: 13px;
+    background-color: #070707;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.titulo-descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.titulo {
+    color: #f36565;
+    font-size: 18px;
+    margin: 0;
+}
+
+
+.descricao {
+    color: #ffffff;
+    font-size: 15px;
+    margin: 0;
+
+}
+
+.titulo-icone-qd {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 27px;
+
+}
+
+.titulo-qd {
+    margin-top: 20px;
+}
+
+.descricao-qd {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    color: #ffffff;
+    font-size: 15px;
+
+}
+
+.descricao-qd li {
+    font-size: 0.98rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1.4;
+    margin-left: 40px;
+}
+
+.descricao-qd .check {
+    color: #2ee647;
+    font-weight: bold;
+    flex-shrink: 0;
 
 }
 
@@ -475,24 +655,28 @@ body {
 .rodape {
     width: 100%;
     height: 75px;
-    
+
     padding: 0 5%;
-    
+
     display: flex;
     align-items: center;
-    position: absolute;
-    bottom: 0%;
+    position: relative;
+    border-top: solid #b9b6b6;
+}
+
+
+.footerindex .rodape {
     border-top: 1px solid #25252B;
 }
 
 .menu-rodape {
     display: flex;
     align-items: center;
-    gap: 8px; 
+    gap: 8px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    
+
 }
 
 .menu-rodape a {
@@ -501,17 +685,16 @@ body {
     font-size: 13px;
     border-bottom: 2px solid transparent;
     transition: 0.3s;
-    
+
 }
 
-.menu-rodape a:hover{
+.menu-rodape a:hover {
     color: rgb(253, 23, 23);
 }
 
 
-.separador{
+.separador {
     color: #b9b6b6;
     font-size: 10px;
 
 }
-
