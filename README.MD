@@ -63,4 +63,4 @@ PROJETOFINALWEB/
 - **Instituição:** UNIPÊ
 - **Curso:** Ciência da Computação
 - **Disciplina:** Desenvolvimento Front-End para Web
-- **Professor(a):** Israel da Costa Cunha
+- **Professor:** Israel da Costa Cunha
